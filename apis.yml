@@ -1,8 +1,29 @@
 aid: 3par
-name: 3par
-description: 3par is a company surfaced as a portfolio company of mayfield, menlo-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/3par.png
+name: 3PAR (HPE 3PAR StoreServ)
+description: >-
+  3PAR is an enterprise storage platform, now part of Hewlett Packard Enterprise (HPE
+  acquired 3PAR in 2010), that powers mission-critical applications with HPE 3PAR StoreServ
+  and Primera arrays. For developers and automation engineers, 3PAR exposes the HPE 3PAR
+  Web Services API (WSAPI) — a REST interface that manages storage provisioning, virtual
+  volumes, hosts, ports, CPGs, snapshots, and remote copy on 3PAR/Primera/Alletra arrays,
+  offering a more flexible and programmable alternative to the 3PAR Command Line Interface.
+  HPE publishes first-party client libraries (Python, Ruby, PowerShell) plus Ansible,
+  Puppet, Chef, OpenStack Cinder, and Docker volume integrations against WSAPI. This
+  profile was surfaced as a venture-portfolio lead (Mayfield, Menlo Ventures backed the
+  original 3PAR before its IPO and HP acquisition) and enriched from HPE's public developer
+  surface.
 url: https://raw.githubusercontent.com/api-evangelist/3par/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,9 +37,54 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Storage
+- Enterprise Storage
+- Infrastructure
+- Data Management
+- REST API
+- WSAPI
+- HPE
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: HPE 3PAR Web Services API (WSAPI)
+  description: >-
+    REST API for managing HPE 3PAR StoreServ / Primera / Alletra storage arrays —
+    virtual volumes, CPGs, hosts, ports, VLUNs, snapshots, and remote copy. Served by
+    the WSAPI server that runs on each array; base URL is per-appliance.
+  humanURL: https://developer.hpe.com/platform/hpe-3par-and-primera/home/
+  baseURL: https://storage-system-address:8080/api/v1
+  properties:
+  - type: Documentation
+    url: https://support.hpe.com/hpesc/public/docDisplay?docId=c03606339
+    name: HPE 3PAR Web Services API Developer's Guide (WSAPI 1.6.x)
+common:
+- type: DeveloperPortal
+  url: https://developer.hpe.com/platform/hpe-3par-and-primera/home/
+  name: HPE 3PAR and Primera Developer Portal
+- type: Documentation
+  url: https://support.hpe.com/hpesc/public/docDisplay?docId=c03606339
+  name: HPE 3PAR Web Services API Developer's Guide
+- type: APIReference
+  url: https://support.hpe.com/hpesc/public/docDisplay?docId=c03606339
+  name: WSAPI Operations Reference
+- type: GitHubOrganization
+  url: https://github.com/hpe-storage
+  name: HPE Storage on GitHub
+- type: Support
+  url: https://developer.hpe.com/slack-signup/
+  name: HPEDEV Slack Workspace
+- type: Packages
+  url: packages/3par-packages.yml
+  name: HPE 3PAR client libraries
+- type: SDKs
+  url: packages/3par-packages.yml
+  name: HPE 3PAR SDKs (Python, Ruby, PowerShell)
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

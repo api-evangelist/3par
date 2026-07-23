@@ -1,0 +1,38 @@
+generated: '2026-07-17'
+method: searched
+source: https://developer.hpe.com/platform/hpe-3par-and-primera/home/
+packages:
+  - language: python
+    registry: pypi
+    name: python-3parclient
+    url: https://pypi.org/project/python-3parclient/
+    repository: https://github.com/hpe-storage/python-3parclient
+    install: pip install python-3parclient
+    version: '4.4'
+    description: HPE Alletra MP, 9000, Primera and 3PAR REST (WSAPI) client for Python.
+    official: true
+  - language: python
+    registry: pypi
+    name: hp3parclient
+    url: https://pypi.org/project/hp3parclient/
+    install: pip install hp3parclient
+    version: 3.3.2
+    description: Legacy HP 3PAR HTTP REST client for Python (predecessor to python-3parclient).
+    official: true
+    deprecated: true
+  - language: ruby
+    registry: rubygems
+    name: hpe3par_sdk
+    url: https://rubygems.org/gems/hpe3par_sdk
+    repository: https://github.com/HewlettPackard/hpe3par_ruby_sdk
+    install: gem install hpe3par_sdk
+    version: 1.1.0
+    description: HPE 3PAR Software Development Kit for Ruby over WSAPI.
+    official: true
+  - language: powershell
+    registry: github
+    name: hpe3par_pstoolkit
+    url: https://github.com/HewlettPackard/hpe3par_pstoolkit
+    install: Install-Module HPE3PARPSToolkit
+    description: HPE Alletra 9000, Primera and 3PAR PowerShell Toolkit (cmdlets over CLI/WSAPI).
+    official: true
