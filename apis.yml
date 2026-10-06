@@ -45,7 +45,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-10-06'
 tags:
 - Company
 - Storage
@@ -73,6 +73,8 @@ apis:
     url: https://support.hpe.com/hpesc/public/docDisplay?docId=c03606339
     name: HPE 3PAR Web Services API Developer's Guide (WSAPI 1.6.x)
 common:
+- url: https://developer.hpe.com/blog/
+  type: Blog
 - type: DeveloperPortal
   url: https://developer.hpe.com/platform/hpe-3par-and-primera/home/
   name: HPE 3PAR and Primera Developer Portal
